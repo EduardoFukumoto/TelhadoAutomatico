@@ -1,2 +1,2 @@
 # TelhadoAutomatico
-Tendo em vista as tendências mundiais, principalmente em países muito desenvolvidos, nosso projeto foca em mostrar como seria simples simular uma automação residencial para maior aproveitamento de luz natural, realizando a automação de entrada de luz dentro de uma casa, a partir da movimentação de um Teto, que poderia muito bem ser uma janela.
+Tendo em vista as tendências mundiais de automação residencial e sustentabilidade, nosso projeto foca em mostrar como seria simples simular uma automação residencial para maior aproveitamento de luz natural, realizando a automação de entrada de luz natural dentro de uma casa e acionamento de luz artificial, a partir da leitura de um Sensor de luz simples(LDR).
