@@ -63,16 +63,79 @@ while(1):
     dutyCycle = 1./18.*desiredAngle + 3
     PWM.set_duty_cycle(servoPin, dutyCycle)
 ```
-
 ### 2.2- Sensor de luz LDR
 #### 2.2.1 - Parte elétrica
 #### 2.2.2 - Programa teste
+
+```
+import Adafruit_BBIO.ADC as ADC #Acionando biblioteca para fazer leitura de tensao
+import time
+
+sensor_pin = 'P9_40'
+
+ADC.setup()
+
+print('Reading\t\tVolts')
+
+while True:
+    reading = ADC.read(sensor_pin)
+    volts = reading * 1.800
+    print('%f\t%f' % (reading, volts))
+    time.sleep(1)
+```
 ### 2.3- Botão
 #### 2.3.1 - Parte elétrica
 #### 2.3.2 - Programa teste
+
+```
+import Adafruit_BBIO.GPIO as GPIO #Acionando biblioteca para controle do LED e botões
+from time import sleep
+
+topButton = "P9_24"
+bottomButton = "P9_13"
+
+GPIO.setup(topButton, GPIO.IN)
+GPIO.setup(bottomButton, GPIO.IN)
+
+while (1):
+    if GPIO.input(topButton):
+        print
+        "Botao1 Pressionado"
+
+    if GPIO.input(bottomButton):
+        print
+        "Botao2 pressionado"
+
+    if GPIO.input(bottomButton) and GPIO.input(topButton):
+        break
+
+    sleep(.2)
+    print("a/t", a, "b", b)
+GPIO.cleanup()
+```
+
 ### 2.4- LED
 #### 2.4.1 - Parte elétrica
 #### 2.4.2 - Programa teste
+
+```
+import Adafruit_BBIO.GPIO as GPIO #Acionando biblioteca para controle do LED
+pin_light1 = 'P9_12'
+pin_light2 = 'P9_15'
+
+GPIO.setup(pin_light1, GPIO.OUT)
+GPIO.setup(pin_light2, GPIO.OUT)
+
+from time import sleep
+
+for i in range(0, 5):
+    GPIO.output(pin_light1, GPIO.HIGH)
+    sleep(1)
+    GPIO.output(pin_light1, GPIO.LOW)
+    sleep(1)
+
+GPIO.cleanup()
+```
 
 ## 3- O Projeto
 ### 3.1- Conexão dos componentes na placa
