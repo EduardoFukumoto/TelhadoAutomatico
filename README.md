@@ -47,7 +47,7 @@ O controle do movimento do motor é feito pela variação da tensão no pino de 
 
 <img src = "https://cdn-learn.adafruit.com/assets/assets/000/010/760/original/beaglebone_fritzing_big_servo.png?1378201406" height = "300" width = "350">
 fonte: https://learn.adafruit.com/  
-**OBS: Pode conectar o controle do motor na placa em GPIO também, mas para isso o código é alterado. Pode-se seguir a imagem, mas conectar o controle do motor em P9_14 - PWM**
+OBS: Pode conectar o controle do motor na placa em GPIO também, mas para isso o código é alterado. Pode-se seguir a imagem, mas conectar o controle do motor em P9_14 - PWM
 
 #### 2.1.2 - Parte mecanica
 
@@ -119,7 +119,7 @@ while True:
 
 <img src = "http://www.toptechboy.com/wp-content/uploads/2015/06/button-beaglebone-black.jpg" height = "300" width = "350">
 Fonte:http://www.toptechboy.com/beaglevone-black-rev-c/beaglebone-lesson-8-digital-input-from-gpio-pins-in-python/
-**OBS: a imagem dos resistores está incorreta, é para usar resistores de 1kOhm**
+OBS: a imagem dos resistores está incorreta, é para usar resistores de 1kOhm
 
 #### 2.3.2 - Programa teste
 
