@@ -1,5 +1,6 @@
 #  Telhado Automatico feito em BeagleBone Black (Python)
-**Integrantes do grupo:\\**
+**Integrantes do grupo:\**
+ \
   Eduardo Akira Fukumoto\
   Carolina Bergamaschi\
   Caio de Oliveira Martins\
@@ -20,7 +21,6 @@ Outra maneira é baixar o Putty, podendo realizar o acesso com o sistema operaci
 [Como fazer ssh pelo Putty](https://www.secnet.com.br/blog/ssh-com-putty/)\
 Outra maneira ainda, é acessar a IDE cloud9 que já vem na placa, somente digitando em um navegador o seguinte link:\
 **192.168.7.2:3000**
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 ## 2- Componentes utilizados no Projeto
 
 ### 2.1- Servomotor
