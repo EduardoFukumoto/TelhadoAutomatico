@@ -25,7 +25,7 @@ Outra maneira ainda, é acessar a IDE cloud9 que já vem na placa, somente digit
 
 ### 1.3 - Datasheet placa
 
-![DatasheetPlaca](http://www.toptechboy.com/wp-content/uploads/2015/06/beaglebone-black-pinout.jpg)
+<img src = "http://www.toptechboy.com/wp-content/uploads/2015/06/beaglebone-black-pinout.jpg">
 fonte: http://www.toptechboy.com/beaglevone-black-rev-c/beaglebone-black-lesson-1-understanding-beaglebone-black-pinout/attachment/beaglebone-black-pinout/
 
 ## 2- Componentes utilizados no Projeto
@@ -44,8 +44,8 @@ Para mais dados sobre alimentação do motor consultar datasheet no próximo tó
 
 O controle do movimento do motor é feito pela variação da tensão no pino de controle (amarelo) então para isso ser possível e no caso de uso da Beaglebone temos que fazer a conexão em algum pino de controle PWM (Pulse Width Modulation).
 
-![Conexão fonte externa](https://cdn-learn.adafruit.com/assets/assets/000/010/760/original/beaglebone_fritzing_big_servo.png?1378201406)
-fonte: https://learn.adafruit.com/
+<img src = "https://cdn-learn.adafruit.com/assets/assets/000/010/760/original/beaglebone_fritzing_big_servo.png?1378201406" height = "300" width = "350">
+fonte: https://learn.adafruit.com/ \
 **OBS: Pode conectar o controle do motor na placa em GPIO também, mas para isso o código é alterado. Pode-se seguir a imagem, mas conectar o controle do motor em P9_14 - PWM**
 
 #### 2.1.2 - Parte mecanica
@@ -80,12 +80,12 @@ Um resistor dependente de luz ou LDR (Light Dependent Resistor), é um component
 
 O LDR deve ser conectado a uma entrada analógica para a Beaglebone seja capaz de receber os dados providos pelo sensor, mais detalhes a frente.
 
-![SensorLDR](https://cdn.awsli.com.br/600x700/468/468162/produto/19414320/sensor-fotoresistor-ldr-de-5mm-6344c5f4.jpg)
+<img src = "https://cdn.awsli.com.br/600x700/468/468162/produto/19414320/sensor-fotoresistor-ldr-de-5mm-6344c5f4.jpg" height = "300" width = "350">
 
 #### 2.2.1 - Parte elétrica
 Resistor de 10Kohm para realizar uma divisão de tensão. Isso é necessário para que a queda de tensão do sensor de luz varie entre 0 e 1.8V, a faixa de valor que a porta da placa BeagleBoard consegue fazer a leitura.
 
-![Conexão da placa](https://cdn-learn.adafruit.com/assets/assets/000/009/320/original/beaglebone_fritzing.png?1396887528)
+<img src = "https://cdn-learn.adafruit.com/assets/assets/000/009/320/original/beaglebone_fritzing.png?1396887528" height = "300" width = "350">
 Fonte: https://learn.adafruit.com/measuring-light-with-a-beaglebone-black/
 
 #### 2.2.2 - Programa teste
@@ -108,12 +108,12 @@ while True:
 ```
 ### 2.3- Botão
 
-![Botão](https://cdn.awsli.com.br/600x700/78/78150/produto/3890423/1f95cf6a89.jpg)
+<img src = "https://cdn.awsli.com.br/600x700/78/78150/produto/3890423/1f95cf6a89.jpg" height = "300" width = "350">
 
 #### 2.3.1 - Parte elétrica
 
-![Ligação botão](http://www.toptechboy.com/wp-content/uploads/2015/06/button-beaglebone-black.jpg)
-Fonte:http://www.toptechboy.com/beaglevone-black-rev-c/beaglebone-lesson-8-digital-input-from-gpio-pins-in-python/
+<img src = "http://www.toptechboy.com/wp-content/uploads/2015/06/button-beaglebone-black.jpg" height = "300" width = "350">
+Fonte:http://www.toptechboy.com/beaglevone-black-rev-c/beaglebone-lesson-8-digital-input-from-gpio-pins-in-python/ \
 **OBS: a imagem dos resistores está incorreta, é para usar resistores de 1kOhm**
 
 #### 2.3.2 - Programa teste
@@ -147,10 +147,11 @@ GPIO.cleanup()
 
 ### 2.4- LED
 
-![Led](https://hackster.imgix.net/uploads/attachments/446767/led_AOuhtzYEQe.png?auto=compress%2Cformat&w=600&h=450&fit=min)
+<img src = "https://hackster.imgix.net/uploads/attachments/446767/led_AOuhtzYEQe.png?auto=compress%2Cformat&w=600&h=450&fit=min" height = "300" width = "350">
+
 #### 2.4.1 - Parte elétrica
 
-[Conexão led](http://www.toptechboy.com/wp-content/uploads/2015/06/LED-Beaglebone-Circuit.jpg)
+<img src = "http://www.toptechboy.com/wp-content/uploads/2015/06/LED-Beaglebone-Circuit.jpg" height = "300" width = "350">
 Fonte:http://www.toptechboy.com/beaglevone-black-rev-c/beaglebone-black-lesson-5-blinking-leds-from-gpio-pins/
 
 #### 2.4.2 - Programa teste
