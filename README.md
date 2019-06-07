@@ -1,9 +1,9 @@
 #  Telhado Automatico feito em BeagleBone Black (Python)
 Integrantes do grupo:
-  Eduardo Akira Fukumoto
-  Carolina Bergamaschi
-  Caio de Oliveira Martins
-  Heloise Mantovani
+  Eduardo Akira Fukumoto\
+  Carolina Bergamaschi\
+  Caio de Oliveira Martins\
+  Heloise Mantovani\
   
 ## 1- Introdução
 Tendo em vista as tendências mundiais de automação residencial e sustentabilidade, nosso projeto foca em mostrar como seria simples simular uma automação residencial para maior aproveitamento de luz natural, realizando a automação de entrada de luz natural dentro de uma casa e acionamento de luz artificial, a partir da leitura de um Sensor de luz simples(LDR).
