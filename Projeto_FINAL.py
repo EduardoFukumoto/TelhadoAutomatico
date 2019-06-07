@@ -1,15 +1,4 @@
 # PROJETO FINAL
-
-#Esses sao os codigos comentados de um programa que realiza o controle de um prototipo de um telhado residencial para controlar a luminosidade
-#interna da casa, controlando a partir de um sensor de luminosidade a abertura de um teto, a partir de um servo motor e o acionamento de
-#luz, representada no caso por LED.
-
-#Junto com esse documento esta disponibilizado um documento WORD com alguns tutoriais na internet - esses tutoriais mostram o funcionamento
-#de cada um dos componentes utilizados nesse projeto, porem de forma separada. Alem disso, no documento Word estara registrado como sao feitas
-#as ligacoes na protoboard, com os respectivos resistores para proteçao da placa e divisao de tensao, e como realizar as ligacoes nos pinos da
-#placa. 
-#Um video tambem sera disponibilizado para mostrar o projeto final em funcionamento.
-
 import Adafruit_BBIO.ADC as ADC #Acionando biblioteca para fazer leitura de tensao
 import Adafruit_BBIO.GPIO as GPIO #Acionando biblioteca para controle do LED e botoes
 import Adafruit_BBIO.PWM as PWM #Acionando biblioteca para controle do motor
