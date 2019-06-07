@@ -35,7 +35,7 @@ Fio preto/marrom do motor: GND/Ground/Terra
 
 Para mais dados sobre alimentação do motor consultar datasheet no próximo tópico. Mesmo que a placa tenha alimentação de 5V, que pode ser necessário para o motor, é aconselhável usar uma fonte externa.
 
-O controle do movimento do motor é feito pela variação da tensão no pino de controle (amarelo) então para isso ser possível e no caso de uso da Beaglebone temos que fazer a conexão em algum pino de controle PWM (Pulse Width Modulation).\
+O controle do movimento do motor é feito pela variação da tensão no pino de controle (amarelo) então para isso ser possível e no caso de uso da Beaglebone temos que fazer a conexão em algum pino de controle PWM (Pulse Width Modulation).
 
 #### 2.1.2 - Parte mecanica
 
@@ -53,7 +53,17 @@ O controle do movimento do motor é feito pela variação da tensão no pino de 
 | Peso                    | 55g               | 
 
 #### 2.1.3 - Programa teste
+...
+import Adafruit_BBIO.PWM as PWM #Acionando biblioteca para controle do motor
+servoPin = "P9_14"
 
+PWM.start(servoPin, 5, 50)
+
+while(1):
+    desiredAngle=input("Qual angulo?")
+    dutyCycle = 1./18.*desiredAngle + 3
+    PWM.set_duty_cycle(servoPin, dutyCycle)
+...
 
 ### 2.2- Sensor de luz LDR
 #### 2.2.1 - Parte elétrica
