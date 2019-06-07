@@ -53,8 +53,7 @@ O controle do movimento do motor é feito pela variação da tensão no pino de 
 | Peso                    | 55g               | 
 
 #### 2.1.3 - Programa teste
-...
-import Adafruit_BBIO.PWM as PWM #Acionando biblioteca para controle do motor
+```import Adafruit_BBIO.PWM as PWM #Acionando biblioteca para controle do motor
 servoPin = "P9_14"
 
 PWM.start(servoPin, 5, 50)
@@ -63,7 +62,7 @@ while(1):
     desiredAngle=input("Qual angulo?")
     dutyCycle = 1./18.*desiredAngle + 3
     PWM.set_duty_cycle(servoPin, dutyCycle)
-...
+```
 
 ### 2.2- Sensor de luz LDR
 #### 2.2.1 - Parte elétrica
