@@ -72,7 +72,11 @@ servoPin = "P9_14"
 PWM.start(servoPin, 5, 50)
 
 while(1):
-    desiredAngle=input("Qual angulo?")
+    desiredAngle=input("Qual angulo?")  # Transformar angulo em ciclo. Eh colocado um . para que os numeros sejam lidos como float.
+        #o valor 1. foi encontrado da seguinte maneira: para dutyCycle0 = 3, nosso motor fica em 0graus e para dutyCycle180 = 13 ele atinge 180graus
+        #Entao temos que dutyCycle = (dutyCycle180 - dutyCycle0)/180 * angulo + dutyCycle0 
+        #Esses valores sao diferentes para cada motor
+        
     dutyCycle = 1./18.*desiredAngle + 3
     PWM.set_duty_cycle(servoPin, dutyCycle)
 ```
