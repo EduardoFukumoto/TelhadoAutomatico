@@ -1,14 +1,26 @@
 #  Telhado Automatico feito em BeagleBone Black (Python)
-Integrantes do grupo:
+Integrantes do grupo:\
   Eduardo Akira Fukumoto\
   Carolina Bergamaschi\
   Caio de Oliveira Martins\
-  Heloise Mantovani\
+  Heloise Mantovani
   
 ## 1- Introdução
-Tendo em vista as tendências mundiais de automação residencial e sustentabilidade, nosso projeto foca em mostrar como seria simples simular uma automação residencial para maior aproveitamento de luz natural, realizando a automação de entrada de luz natural dentro de uma casa e acionamento de luz artificial, a partir da leitura de um Sensor de luz simples(LDR).
+O projeto que será descrito nesse relatório consiste em um protótipo inicial de um sistema de automação residencial, mais especificamente controle de um telhado automático conforme leitura em sensor de luminosidade(LDR).\
+Sistema de malha fechada processado pela Beaglebone Black, programado em Python com auxílio da biblioteca Adafruit.
 ### 1.1 - Bibliotecas usadas em Python
+Foi utilizada a biblioteca Adafruit para utilizar as portas GPIO (para realizar o controle dos LEDs e receber inputs dos botões), PWM(realizar o controle do motor) e ADC(medir a tensão no sensor de luminosidade LDR)\
+É necessário ter a biblioteca Adafruit para realizar o tutorial abaixo, ela já está presente no sistema operacional mais atualizado do Debian, que pode ser instalada na BeagleBone Black ou que já vem embutida nas placas mais novas. Caso não tenha essa biblioteca será necessário instalar ela.\
 
+https://beagleboard.org/getting-started - tutorial para iniciar a usar a beaglebone.
+
+### 1.2 - Acessando a placa
+Existem várias maneiras de acessar a placa BeagleBone, realizando a conexão ssh. Caso você utilize o Linux, pode acessar a placa utilizando o terminal e utilizar o seguinte comando:\
+ssh root@192.168.7.2\
+Outra maneira é baixar o Putty, podendo realizar o acesso com o sistema operacional windows.\
+[Como fazer ssh pelo Putty] (https://www.secnet.com.br/blog/ssh-com-putty)\
+Outra maneira ainda, é acessar a IDE cloud9 que já vem na placa, somente digitando em um navegador o seguinte link:\
+192.168.7.2:3000
 ## 2- Componentes utilizados no Projeto
 
 ### 2.1- Servomotor
