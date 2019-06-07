@@ -46,7 +46,7 @@ Para mais dados sobre alimentação do motor consultar datasheet no próximo tó
 O controle do movimento do motor é feito pela variação da tensão no pino de controle (amarelo) então para isso ser possível e no caso de uso da Beaglebone temos que fazer a conexão em algum pino de controle PWM (Pulse Width Modulation).
 
 <img src = "https://cdn-learn.adafruit.com/assets/assets/000/010/760/original/beaglebone_fritzing_big_servo.png?1378201406" height = "300" width = "350">
-fonte: https://learn.adafruit.com/
+fonte: https://learn.adafruit.com/  
 **OBS: Pode conectar o controle do motor na placa em GPIO também, mas para isso o código é alterado. Pode-se seguir a imagem, mas conectar o controle do motor em P9_14 - PWM**
 
 #### 2.1.2 - Parte mecanica
