@@ -178,11 +178,10 @@ GPIO.cleanup()
 
 ## 3- O Projeto
 O projeto pode ser visto em funcionamento através desse link:
-[![Watch the video](https://img.youtube.com/vi/T-Yk8eOxkoNCM/maxresdefault.jpg)](https://youtu.be/T-Yk8eOxkoNCM)
-
-
+[![Watch the video](https://img.youtube.com/vi/Yk8eOxkoNCM/maxresdefault.jpg)](https://youtu.be/Yk8eOxkoNCM)
 
 ### 3.1- Conexão dos componentes na placa
+
 
 
 ### 3.2- Código do projeto
