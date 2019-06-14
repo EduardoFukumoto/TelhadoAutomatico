@@ -33,7 +33,7 @@ fonte: http://www.toptechboy.com/beaglevone-black-rev-c/beaglebone-black-lesson-
 
 ### 2.1- Servomotor
 O modelo utilizado foi o servomotor MG995 como na imagem a seguir:\
-![Imagem do motor]()
+![Imagem do motor](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-vAmDP5JFrF_lfE6jDnDGFQ5v0US9WXyUJtvkRiYP_t_NS4ZefrLNmsCB)
 
 #### 2.1.1 - Parte elétrica
 Fio amarelo do motor: Fio de controle;\
@@ -81,14 +81,14 @@ while(1):
     PWM.set_duty_cycle(servoPin, dutyCycle)
 ```
 ### 2.2- Sensor de luz LDR
-Um resistor dependente de luz ou LDR (Light Dependent Resistor), é um componente eletrônico passivo do tipo resistor variável, mais especificamente, é um resistor cuja resistência varia conforme a intensidade da luz que incide sobre ele. Quanto mais luz menor a resistência do LDR, quando mais escuro maior é a resistência. 
+Um resistor dependente de luz ou LDR (Light Dependent Resistor), é um componente eletrônico passivo do tipo resistor variável, mais especificamente, é um resistor cuja resistência varia conforme a intensidade da luz que incide sobre ele. Quanto mais luz menor a resistência do LDR, quando mais escuro maior é a resistencia, ou seja, quanto mais luz, menor vai ser a queda de tensão sobre ele.
 
 O LDR deve ser conectado a uma entrada analógica para a Beaglebone seja capaz de receber os dados providos pelo sensor, mais detalhes a frente.
 
 <img src = "https://cdn.awsli.com.br/600x700/468/468162/produto/19414320/sensor-fotoresistor-ldr-de-5mm-6344c5f4.jpg" height = "300" width = "350">
 
 #### 2.2.1 - Parte elétrica
-Resistor de 10Kohm para realizar uma divisão de tensão. Isso é necessário para que a queda de tensão do sensor de luz varie entre 0 e 1.8V, a faixa de valor que a porta da placa BeagleBoard consegue fazer a leitura.
+Resistor de 10Kohm para realizar uma divisão de tensão. Isso é necessário para que a queda de tensão do sensor de luz varie entre 0 e 1.8V, a faixa de valor que a porta da placa BeagleBoard consegue medir a queda de tensão.
 
 <img src = "https://cdn-learn.adafruit.com/assets/assets/000/009/320/original/beaglebone_fritzing.png?1396887528" height = "300" width = "380">
 Fonte: https://learn.adafruit.com/measuring-light-with-a-beaglebone-black/
