@@ -186,7 +186,7 @@ O projeto pode ser visto em funcionamento através desse link:
 
 ### 3.1- Conexão dos componentes na placa
 
-
+![imgcircuito](https://imagizer.imageshack.com/img923/1592/X2yz9h.jpg)
 
 ### 3.2- Código do projeto
 
