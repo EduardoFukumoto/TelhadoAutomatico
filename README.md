@@ -182,8 +182,9 @@ GPIO.cleanup()
 
 ## 3- O Projeto
 O projeto pode ser visto em funcionamento através desse link:
-[![Watch the video](https://img.youtube.com/vi/Yk8eOxkoNCM/maxresdefault.jpg)](https://youtu.be/Yk8eOxkoNCM)
+[![Watch the video](https://img.youtube.com/vi/d-e3Vvqif8Y/maxresdefault.jpg)](https://youtu.be/d-e3Vvqif8Y)
 
+https://youtu.be/d-e3Vvqif8Y
 ### 3.1- Conexão dos componentes na placa
 
 ![imgcircuito](https://imagizer.imageshack.com/img923/1592/X2yz9h.jpg)
